@@ -1,0 +1,8 @@
+{
+  "name": "local-notification-setter",
+  "app_id": "aaccaa2a",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Local Notification Setter
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+<ion-list>
+
+    <ion-item>
+      <ion-label floating>Message</ion-label>
+      <ion-input type="text" [(ngModel)]="message"></ion-input>
+    </ion-item>
+
+  <ion-item>
+    <ion-label floating>Date</ion-label>
+    <ion-input (focus)="selectDate()" type="text" value="{{dateString}}" readonly="true"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Time</ion-label>
+    <ion-input (focus)="selectTime()" type="text" value="{{timeString}}" readonly="true"></ion-input>
+  </ion-item>
+
+  <button ion-button block large class="setBtn" (click)="setNotification()">Set Notification</button>
+    
+</ion-list>
+
+</ion-content>
